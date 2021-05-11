@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.container {
+    margin: 20px 10px;
+}
+
+.desc {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color:rgb(235, 235, 235);
+    
+}
+
+.btn {
+    font-size: 20px;
+    text-align: left;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.btn:after {
+    content: "+";
+    float: right;
+    font-weight: 300;
+    color: #777; 
+}
+
+.active:after {
+    content: "-";
+}
+
+
+
+
+

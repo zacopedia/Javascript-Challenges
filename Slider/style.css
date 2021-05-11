@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide-container {
+    position: relative;
+    margin: 20px 40px;
+}
+
+.slide-container  .image-container img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.slide-container .image-container img.active {
+    opacity: 1;
+}
+
+.slide-container  .iconify {
+    position: absolute;
+    top: 123px;
+    width: 36px;
+    height: 40px;
+    color: #FBF9F9;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slide-container  .iconify-right {
+       left: 360px;
+}
+
+.slide-container .iconify-left {
+       left: 18px;
+}
+
+
+
