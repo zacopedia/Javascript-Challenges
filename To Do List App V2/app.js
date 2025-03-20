@@ -1,8 +1,17 @@
 const btn = document.querySelector(".btn");
 const containerNotes = document.querySelector(".container-notes")
-const trash =document.querySelector(".trash")
+let notes = document.querySelectorAll("input-box")
+// let icon = document.querySelector(".trash")
+ function updateStorage () {
+    localStorage.setItem("notes", containerNotes.innerHTML)
+}
 
+function showStorage () {
+    containerNotes.innerHTML = localStorage.getItem("notes")
+}
+showStorage ()
 btn.addEventListener('click', () => {
+    
     let inputBox = document.createElement("p")
     let icon = document.createElement("i")
 
@@ -10,7 +19,14 @@ btn.addEventListener('click', () => {
     inputBox.setAttribute("contenteditable", "true")
 
     icon.classList.add("fa-solid", "fa-trash", "trash")
-
-    containerNotes.appendChild(inputBox)
-   containerNotes.appendChild(icon)
+    containerNotes.appendChild(inputBox).appendChild(icon)
+    
 })
+
+containerNotes.addEventListener('click', function (e) {
+    if (e.target.className == "fa-solid fa-trash trash") {
+        e.target.parentElement.remove()
+        updateStorage()
+    }
+})
+console.log(updateStorage())
