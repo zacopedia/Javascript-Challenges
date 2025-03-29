@@ -1,23 +1,29 @@
 // Add Default Data to Local Storage
 document.body.classList.add(localStorage.getItem('pageColor') || 'first')
-var element = document.querySelectorAll('.color-switcher li')
-var classesList = [];
+const element = document.querySelectorAll('.color-switcher li')
+const classesList = [];
 
-for(var i = 0; i < element.length; i++) {
-    // Loop On Elements
-    classesList.push(element[i].getAttribute("data-color"));
 
-    element[i].addEventListener("click", function(){
+   element.forEach(item => {
+           // Loop On Elements
+   const colorClass = item.getAttribute("data-color")
+   classesList.push(colorClass)
 
-        // Remove Old Classes
-        document.body.classList.remove(...classesList);
+item.addEventListener('click', ()=> {
+       // Remove Old Classes
+       document.body.classList.remove(...classesList);
 
-        // Add Current Classes From Li Get Attribute
-        document.body.classList.add(this.getAttribute("data-color"));
-        // Add Data to Local Storage 
-        localStorage.setItem('pageColor', this.getAttribute("data-color"))
-    },false);
-}
+       // Add Current Classes From Li Get Attribute
+       document.body.classList.add(colorClass);
+       // Add Data to Local Storage 
+       localStorage.setItem('pageColor', colorClass)
+})
+
+     
+    
+   })
+   
+
 
 
 
