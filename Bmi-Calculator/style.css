@@ -39,6 +39,12 @@ input:focus {
     border: none;
 }
 
+.display {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffff;
+}
+
 
 
 
