@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #219ebc;
+}
+
+p {
+    font-size: 1rem;
+}
+.start-sec {
+    position: relative;
+    width: 60%;
+    height: 20vh;
+    margin: 100px auto 0;
+    padding: 15px;
+    background-color: rgba(208, 74, 74, 0.866);
+}
+
+.btn-start {
+    position: absolute;
+    left: 150px;
+    margin-top: 10px;
+     
+}
+
+.app {
+    width: 60%;
+    max-width: 600px;
+    background-color: rgba(208, 74, 74, 0.866);
+    margin: 100px auto 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+h1 {
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.quiz {
+    padding-top: 10px;
+}
+
+.quiz h2 {
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.answer-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer-question .btn {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000814;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(100, 100%, 70%);
+}
+
+
+
