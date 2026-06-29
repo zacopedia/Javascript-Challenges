@@ -26,10 +26,9 @@ input {
 }
 
 input:focus {
-  background-color: #ddd;
-  outline: none;
+    background-color: #ddd;
+    outline: none;
 }
-
 
 .btn {
     display: inline-block;
