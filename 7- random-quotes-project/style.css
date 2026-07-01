@@ -19,14 +19,15 @@ span {
 }
 
 .container {
-   max-width: 500px;
-   margin: 30% auto;
-   text-align: center;
-   background: #5B84B1FF;
+    max-width: 500px;
+    height:70vh;
+    margin: 30% auto;
+    text-align: center;
+    background: #5B84B1FF;
 }
 
 .quotes {
-    height: auto;
+    height: 40vh;
     padding: 5rem;
     margin: auto;
 }
@@ -34,18 +35,19 @@ span {
 .btn {
     display: inline-block;
     font-size: .75rem;
-    padding: .75rem .25rem;
+    padding: .75rem 1rem;
     margin-top: 1rem;
-    background: #b5b5b5;
+    background: #2563eb;
     color: #ffff;
     border: none;
     opacity: .7;
     outline: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom:1rem;
 }
 
 .btn:hover {
-   opacity: 1;
+    background:#93c5fd;
 }
 
