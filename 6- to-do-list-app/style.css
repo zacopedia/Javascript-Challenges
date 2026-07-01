@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-   max-width: 400px;
-   margin: 20% auto;
-   text-align: center;
+    max-width: 400px;
+    margin: 20% auto;
+    text-align: center;
 }
 
 input[type=text],
@@ -43,11 +43,10 @@ label {
     margin: 30px auto;
 }
 
-
 .todos {
     display: flex;
     flex-direction: column;
- }
+}
 
 .todos li {
     display: flex;
